@@ -48,28 +48,58 @@ There was a rabit and tortoise.
 }
 
 
-
+//Unicode decipher example
 exampleOf(exampleName: "Example of SWIFT String supported special characters") {
   let unicodeExample = "\u{26F3}" //\u{} deciphers unicode character from their code.
   print("Let's play Golf. Hell Yeah!!!\(unicodeExample)")
+}
+
+//Iterating over sring
+exampleOf(exampleName: "Iterating over sring") {
+  let myName = "Abhisek"
+  for individualCharacter in myName {
+    print(individualCharacter)
+  }
+}
+
+//String Mutability
+exampleOf(exampleName: "String Mutability") {
   
-  let threeDoubleQuotationMarks = """
-Escaping the first quotation mark \"""
-Escaping all three quotation marks \"\"\"
-"""
- print(threeDoubleQuotationMarks)
+  var myFirstSentence = "I am going to Paradeep port. " //Mutable string shall be var, don't make it let, or else APPLE will ask you to modfiy.
+  print("Initial sentence -> \(myFirstSentence)")
+  myFirstSentence += "I will then go to the beach." // Or we can write - myFirstSentence = myFirstSentence + "Your_Sentence"
+  print("Final sentence after changing -> \(myFirstSentence)")
   
 }
 
+//Concatenate
+exampleOf(exampleName: "Concatenate") {
+  
+  let firstString = "My name is"
+  let secondString = "Abhisek"
+  let resultantString = firstString + secondString
+  print(resultantString)
+  
+}
 
+//String Interpolation
+exampleOf(exampleName: "String Interpolation") {
+  let productName = "iPhone 5"
+  let productPrice = "$50"
+  print("The product to be sold is \(productName) having a price of \(productPrice)")
+}
 
+//String Interpolation
+exampleOf(exampleName: "Counting string characters") {
+  let productName = "iPhone 5"
+  print("The number of characters in \(productName) is \(productName.count)")
+}
 
-
-
-
-
-
-
+//String indices
+exampleOf(exampleName: "String Indices") {
+  let fruit = "Orange"
+  
+}
 
 
 

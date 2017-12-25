@@ -6,30 +6,31 @@ var str = "Hello, playground"
 
 var a: String? = "a"
 
-func exampleOf(exmpleName: String, completion: ()->()) {
-   print("Example of \(exmpleName)")
-   completion()
-   print("\n")
+func exampleOf(exampleName: String, completion: ()->()) {
+    print("Example of \(exampleName)")
+    print("-------------------------")
+    completion()
+    print("\n")
 }
 
 
 let persons = ["Hari","Shyam","Ram","Johnnny","Puttu"]
 
 //One-Sided Ranges
-exampleOf(exmpleName: "One Sided Range Pattern - 1") {
+exampleOf(exampleName: "One Sided Range Pattern - 1") {
     for items in persons[2...] {
         print(items)
     }
 }
 
-exampleOf(exmpleName: "One Sided Range Pattern - 2") {
+exampleOf(exampleName: "One Sided Range Pattern - 2") {
     for items in persons[...2] {
         print(items)
     }
 }
 
 
-exampleOf(exmpleName: "One Sided Range Pattern -3") {
+exampleOf(exampleName: "One Sided Range Pattern -3") {
     for items in persons[..<2] {
         print(items)
     }
@@ -37,7 +38,7 @@ exampleOf(exmpleName: "One Sided Range Pattern -3") {
 
 
 //PartialRangeThrough
-exampleOf(exmpleName: "Range Type - PartialRangeThrough") {
+exampleOf(exampleName: "Range Type - PartialRangeThrough") {
     let range = ...5
     print(range)
 }

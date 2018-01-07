@@ -89,11 +89,8 @@ enum Result<Value> {
 }
 
 func divide(number: Int, by dividend: Int) -> Result<Int> {
-    guard y != 0 else {
+    guard dividend != 0 else {
         return .failure("Trying to divide by zero.")
     }
-    return .success(x / y)
+    return .success(number / dividend)
 }
-
-
-

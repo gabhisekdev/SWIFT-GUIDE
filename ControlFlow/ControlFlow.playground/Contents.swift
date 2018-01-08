@@ -62,7 +62,7 @@ exampleOf(exampleName: "SWitch condition") {
     }
 }
 
-
+//Looping
 
 //While loop
 exampleOf(exampleName: "While loop") {
@@ -92,14 +92,30 @@ exampleOf(exampleName: "Repeat While loop"){
     } while(countDescending > 0)
 }
 
+// For loop
+/*
+ For basic of for loop let's create a array of numbers and retrive it
+ */
 
-exampleOf(exampleName: "Checking"){
-    var i = 4
-    var j : Int?
+////---------------------MARK: Check for For loop for retrive values from Array -------------------------
+
+exampleOf(exampleName: "For Loop"){
+    let numberArray = [1,2,3,4,5,6,7,8,9]
+    for numbers in numberArray{
+        print(numbers)
+    }
+    
+    let listOfNames = ["Ashutos","Abhisek","Jitu","Bunty"]
+    for name in listOfNames {
+        print("Hello " + name)
+    }
 }
 
+////---------------------MARK: Check for For loop for retrive values from Dict -------------------------
 
-
-
-
-
+exampleOf(exampleName: "For Loop for retrive a dict"){
+    let numberOfLegs = ["Ant": 6, "Cat": 4,"Human": 2,"Spider": 8,"Horse": 4]
+    for (animalName, legCount) in numberOfLegs {
+        print("\(animalName)s have \(legCount) legs")
+    }
+}
